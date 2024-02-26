@@ -2,9 +2,9 @@ on:
   workflow_dispatch:
 
 env:
-  CALLER_IMAGE_NAME: 'europe-west1-docker.pkg.dev/xgo-sandbox-d087/perso-registry/caller-api'
-  CALLEE_IMAGE_NAME: 'europe-west1-docker.pkg.dev/xgo-sandbox-d087/perso-registry/callee-api'
-  PROJECT_ID: 'xgo-sandbox-d087'
+  CALLER_IMAGE_NAME: 'europe-west1-docker.pkg.dev/acolad-temporary-project/perso-registry/caller-api'
+  CALLEE_IMAGE_NAME: 'europe-west1-docker.pkg.dev/acolad-temporary-project/perso-registry/callee-api'
+  PROJECT_ID: 'acolad-temporary-project'
 
 jobs:
 
