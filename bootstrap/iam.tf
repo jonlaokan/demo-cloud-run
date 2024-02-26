@@ -3,7 +3,8 @@ resource "google_service_account" "default" {
 }
 
 locals {
-  authorized_repo = [for r in var.github_repositories : "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.default.name}/attribute.repository/xgourmandin/${r}"]
+  authorized_repo = [for r in var.github_repositories :
+  "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.default.name}/attribute.repository/jonlaokan/${r}"]
 }
 
 resource "google_service_account_iam_binding" "default" {
